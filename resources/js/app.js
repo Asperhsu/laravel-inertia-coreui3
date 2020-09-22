@@ -14,6 +14,17 @@ Vue.use(InertiaApp);
 Vue.use(VueMeta);
 Vue.use(CoreuiVue);
 
+// mock router-link to inertia-link let CLink work
+Vue.prototype.$router = {}; // fake router
+Vue.component('router-link', {
+    functional: true,
+    render: function (createElement, context) {
+        let {nativeOn, ...data} = context.data;
+        data.props.href = data.props.to;
+        return createElement('inertia-link', data, context.children);
+    },
+});
+
 const app = document.getElementById('app');
 const appName = document.title;
 
@@ -25,7 +36,7 @@ new Vue({
     render: h => h(InertiaApp, {
         props: {
             initialPage: JSON.parse(app.dataset.page),
-            resolveComponent: name => import(`@/Pages/${name}`).then(module => {
+            resolveComponent: name => import(/* webpackChunkName: "[request]" */ `@/Pages/${name}`).then(module => {
                 if (!module.default.layout) {
                     module.default.layout = App
                 }

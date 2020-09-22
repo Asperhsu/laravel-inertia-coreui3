@@ -1,9 +1,9 @@
 <template>
     <CSidebarNavDropdown :name="name" :font-icon="icon" :show.sync="show">
         <template v-for="(item, index) in children">
-            <SidebarNavItem v-if="!item.children" :key="_uid + '_' + index"
+            <CSidebarNavItem v-if="!item.children" :key="_uid + '_' + index"
                 :name="item.name"
-                :href="item.href"
+                :to="item.href"
                 :font-icon="item.icon"
                 :active="active(item.href)"
             />
@@ -13,11 +13,8 @@
 </template>
 
 <script>
-    import SidebarNavItem from './SidebarNavItem';
-
     export default {
         name: "SidebarNavDropdown",
-        components: { SidebarNavItem },
         props: {
             name: String,
             icon: String,

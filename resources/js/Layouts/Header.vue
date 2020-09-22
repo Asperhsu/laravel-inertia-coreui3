@@ -15,10 +15,10 @@
         </CHeaderBrand>
         <CHeaderNav class="d-md-down-none mr-auto">
             <CHeaderNavItem class="px-3">
-                <HeaderNavLink href="/dashboard">Dashboard</HeaderNavLink>
+                <CHeaderNavLink to="/dashboard">Dashboard</CHeaderNavLink>
             </CHeaderNavItem>
             <CHeaderNavItem class="px-3">
-                <HeaderNavLink href="/users" exact>Users</HeaderNavLink>
+                <CHeaderNavLink to="/users" exact>Users</CHeaderNavLink>
             </CHeaderNavItem>
             <!-- <CHeaderNavItem class="px-3">
                 <HeaderNavLink>Settings</HeaderNavLink>
@@ -40,19 +40,17 @@
             <TheHeaderDropdownAccnt />
         </CHeaderNav>
         <CSubheader class="px-3">
-            <Breadcrumb class="border-0 m-0 px-0 px-md-3" :items="breadcrumbs" />
+            <CBreadcrumb class="border-0 m-0 px-0 px-md-3" :items="breadcrumbs" />
         </CSubheader>
     </CHeader>
 </template>
 
 <script>
-    import HeaderNavLink from '@/Components/HeaderNavLink';
-    import Breadcrumb from '@/Components/Breadcrumb';
     import TheHeaderDropdownAccnt from './TheHeaderDropdownAccnt';
 
     export default {
         name: 'TheHeader',
-        components: {HeaderNavLink, Breadcrumb, TheHeaderDropdownAccnt},
+        components: {TheHeaderDropdownAccnt},
         computed: {
             breadcrumbs () {
                 return this.$store.state.breadcrumbs

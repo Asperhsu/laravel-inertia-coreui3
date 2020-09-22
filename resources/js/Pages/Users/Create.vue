@@ -26,7 +26,7 @@
         },
         mounted () {
             this.$store.commit('setBreadcrumbs', [
-                {text: 'Users', href: this.$route('users.index')},
+                {text: 'Users', to: this.$route('users.index')},
                 {text: 'Create'},
             ]);
         },

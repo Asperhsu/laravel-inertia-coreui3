@@ -1,4 +1,10 @@
 {
-    "/js/app.js": "/js/app.js?id=7ac44c9fa14d78831b37",
-    "/css/app.css": "/css/app.css?id=bfcef029cfb9bfdbc26f"
+    "/js/app.js": "/js/app.js?id=c1a232afec0bd73f7933",
+    "/css/app.css": "/css/app.css?id=bfcef029cfb9bfdbc26f",
+    "/js/About.js": "/js/About.js?id=5e80de8b03a1e847c818",
+    "/js/Dashboard.js": "/js/Dashboard.js?id=cf6e7b54fe76b0e9a0bc",
+    "/js/Users-Create.js": "/js/Users-Create.js?id=cebd5e57693bcfaa654c",
+    "/js/Users-Edit.js": "/js/Users-Edit.js?id=1167eb34bc6c0c7c465d",
+    "/js/Users-Form.js": "/js/Users-Form.js?id=5d1f203a70de67724982",
+    "/js/Users-Index.js": "/js/Users-Index.js?id=2dfe61e1e0181a837709"
 }
