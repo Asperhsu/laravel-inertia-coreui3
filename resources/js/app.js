@@ -37,7 +37,7 @@ new Vue({
         props: {
             initialPage: JSON.parse(app.dataset.page),
             resolveComponent: name => import(/* webpackChunkName: "[request]" */ `@/Pages/${name}`).then(module => {
-                if (!module.default.layout) {
+                if (typeof module.default.layout == "undefined") {
                     module.default.layout = App
                 }
 

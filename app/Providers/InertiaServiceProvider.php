@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Str;
 
 class InertiaServiceProvider extends ServiceProvider
 {
@@ -31,10 +32,13 @@ class InertiaServiceProvider extends ServiceProvider
                 ];
             },
             'flash' => function () {
-                return [
+                $msgs = array_filter(session()->all(), function ($value, $key) {
+                    return !Str::startsWith($key, '_');
+                }, ARRAY_FILTER_USE_BOTH);
+                return array_merge($msgs, [
                     'success' => session('success'),
                     'error' => session('error'),
-                ];
+                ]);
             },
             'sidebar' => function () {
                 return [

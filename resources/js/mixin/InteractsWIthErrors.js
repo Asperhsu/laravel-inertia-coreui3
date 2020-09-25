@@ -4,10 +4,10 @@ export default {
     },
     methods: {
         isValid(field) {
-            if (!Object.keys(this.errors).length) {
-                return null;
+            if (this.errors.hasOwnProperty(field)) {
+                return false;
             }
-            return !this.errors.hasOwnProperty(field);
+            return null;
         },
         getInvalidMsg(field) {
             return this.isValid(field) ? null : this.errors[field];

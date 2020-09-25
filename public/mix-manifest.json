@@ -1,10 +1,21 @@
 {
-    "/js/app.js": "/js/app.js?id=c1a232afec0bd73f7933",
+    "/js/app.js": "/js/app.js?id=7d87167d072a822b259e",
     "/css/app.css": "/css/app.css?id=bfcef029cfb9bfdbc26f",
     "/js/About.js": "/js/About.js?id=5e80de8b03a1e847c818",
     "/js/Dashboard.js": "/js/Dashboard.js?id=cf6e7b54fe76b0e9a0bc",
-    "/js/Users-Create.js": "/js/Users-Create.js?id=cebd5e57693bcfaa654c",
-    "/js/Users-Edit.js": "/js/Users-Edit.js?id=1167eb34bc6c0c7c465d",
-    "/js/Users-Form.js": "/js/Users-Form.js?id=5d1f203a70de67724982",
-    "/js/Users-Index.js": "/js/Users-Index.js?id=2dfe61e1e0181a837709"
+    "/js/Login.js": "/js/Login.js?id=be76a83737650114ac87",
+    "/js/Users-Create.js": "/js/Users-Create.js?id=df4fece77042ce01197f",
+    "/js/Users-Edit.js": "/js/Users-Edit.js?id=dd29d94a6fb78eb92736",
+    "/js/Users-Form.js": "/js/Users-Form.js?id=ac353173811da22f8613",
+    "/js/Users-Index.js": "/js/Users-Index.js?id=2dfe61e1e0181a837709",
+    "/js/Auth-Login.js": "/js/Auth-Login.js?id=3eff073707effdbb9868",
+    "/js/Auth-Login-copy.js": "/js/Auth-Login-copy.js?id=9eeb5e7bb191c37f5965",
+    "/js/Auth-Register.js": "/js/Auth-Register.js?id=4f90ff0be6609f12f20a",
+    "/js/Auth-Register-copy.js": "/js/Auth-Register-copy.js?id=d12a356c4dace68231f7",
+    "/js/Auth-RequestResetPassword.js": "/js/Auth-RequestResetPassword.js?id=83f54278fe84ddad8d67",
+    "/js/Auth-ResetPassword.js": "/js/Auth-ResetPassword.js?id=f932124a7f75fddd2fea",
+    "/js/Auth-RequestResetPassword-copy.js": "/js/Auth-RequestResetPassword-copy.js?id=52cb170d73c02e11ae0e",
+    "/js/Auth-ConfirmPassword.js": "/js/Auth-ConfirmPassword.js?id=456b1c4e681948327bba",
+    "/js/Auth-RequestVerifyEmail.js": "/js/Auth-RequestVerifyEmail.js?id=3e25f8ca07bee7b0f53f",
+    "/js/Auth-VerifyEmailNotice.js": "/js/Auth-VerifyEmailNotice.js?id=7c7ef4bf6484098d8f6e"
 }

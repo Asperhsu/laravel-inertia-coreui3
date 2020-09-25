@@ -47,7 +47,7 @@
         <CDropdownItem>
             <i class="fa fa-lock mfe-2"></i>Lock Account
         </CDropdownItem>
-        <CDropdownItem>
+        <CDropdownItem @click="logout">
             <i class="fa fa-sign-out-alt mfe-2"></i>Logout
         </CDropdownItem>
     </CDropdown>
@@ -60,6 +60,11 @@
             return {
                 itemsCount: 42,
             };
+        },
+        methods: {
+            logout () {
+                this.$inertia.post(this.$route('logout'))
+            },
         },
     };
 </script>
